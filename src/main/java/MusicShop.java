@@ -1,15 +1,18 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class MusicShop {
 
     private String name;
     private double till;
-    private int stock;
+    private ArrayList<ISell> stock;
 
 //    a shop will have a name, a total till and a total stock quantity
 
-    public MusicShop(String name, double till, int stock){
+    public MusicShop(String name, double till){
         this.name = name;
         this.till =  till;
-        this.stock =  stock;
+        this.stock =  new ArrayList<ISell>();
     }
 
     public String getName() {
