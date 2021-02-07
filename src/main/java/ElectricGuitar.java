@@ -1,4 +1,4 @@
-public class ElectricGuitar extends MusicalInstrument {
+public class ElectricGuitar extends MusicalInstrument implements IPlay {
 
     private boolean extendedRange = true;
     private int numberOfStrings;
@@ -23,5 +23,9 @@ public class ElectricGuitar extends MusicalInstrument {
 
     public void setNumberOfStrings(int numberOfStrings) {
         this.numberOfStrings = numberOfStrings;
+    }
+
+    public String playInstrument(){
+        return "CHUN CHUN CHUN";
     }
 }

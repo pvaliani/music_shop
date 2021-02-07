@@ -1,4 +1,4 @@
-public class BassGuitar extends MusicalInstrument {
+public class BassGuitar extends MusicalInstrument implements IPlay{
 
     private int numberOfStrings;
 
@@ -10,5 +10,9 @@ public class BassGuitar extends MusicalInstrument {
 
     public int getNumberOfStrings() {
         return numberOfStrings;
+    }
+
+    public String playInstrument(){
+        return "SLAPPA DA BASS";
     }
 }

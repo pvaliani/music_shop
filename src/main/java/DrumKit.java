@@ -1,4 +1,4 @@
-public class DrumKit extends MusicalInstrument {
+public class DrumKit extends MusicalInstrument implements IPlay {
 
     private String numberOfCymbals;
     private String numberOfShells;
@@ -23,5 +23,9 @@ public class DrumKit extends MusicalInstrument {
 
     public void setNumberOfShells(String numberOfShells) {
         this.numberOfShells = numberOfShells;
+    }
+
+    public String playInstrument(){
+        return "TSK TSK TSK TSK";
     }
 }
