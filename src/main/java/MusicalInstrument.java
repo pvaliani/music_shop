@@ -54,6 +54,8 @@ public abstract class MusicalInstrument implements IPlay, ISell {
         this.brand = brand;
     }
 
+//    method to calculate the markup of items in the shop
+
     public double calculateMarkup(){
         return this.salePrice - this.costPrice;
     }
