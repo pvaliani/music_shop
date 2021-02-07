@@ -1,9 +1,10 @@
-public class DrumKit {
+public class DrumKit extends MusicalInstrument {
 
     private String numberOfCymbals;
     private String numberOfShells;
 
-    public DrumKit(String numberOfCymbals, String numberOfShells){
+    public DrumKit(String name, String model, String numberOfCymbals, String numberOfShells){
+        super(name, model);
         this.numberOfCymbals = numberOfCymbals;
         this.numberOfShells = numberOfShells;
     }
