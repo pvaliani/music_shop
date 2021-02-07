@@ -1,10 +1,10 @@
-public class DrumKit extends MusicalInstrument implements IPlay {
+public class DrumKit extends MusicalInstrument implements ISell {
 
     private String numberOfCymbals;
     private String numberOfShells;
 
-    public DrumKit(String name, String model, String numberOfCymbals, String numberOfShells){
-        super(name, model);
+    public DrumKit(String name, String model, double costPrice, double salePrice, String numberOfCymbals, String numberOfShells){
+        super(name, model, costPrice, salePrice);
         this.numberOfCymbals = numberOfCymbals;
         this.numberOfShells = numberOfShells;
     }
@@ -29,5 +29,9 @@ public class DrumKit extends MusicalInstrument implements IPlay {
 
     public String playInstrument(){
         return "TSK TSK TSK TSK";
+    }
+
+    public double calculateMarkup(){
+        return 100.1;
     }
 }

@@ -1,10 +1,10 @@
-public class ElectricGuitar extends MusicalInstrument implements IPlay {
+public class ElectricGuitar extends MusicalInstrument implements ISell {
 
     private boolean extendedRange = true;
     private int numberOfStrings;
 
-    public ElectricGuitar(String name, String model, boolean extendedRange, int numberOfStrings) {
-        super(name, model);
+    public ElectricGuitar(String name, String model, double costPrice, double salePrice, boolean extendedRange, int numberOfStrings) {
+        super(name, model, costPrice, salePrice);
         this.numberOfStrings=numberOfStrings;
         this.extendedRange = true;
     }
@@ -29,5 +29,9 @@ public class ElectricGuitar extends MusicalInstrument implements IPlay {
 
     public String playInstrument(){
         return "CHUN CHUN CHUN";
+    }
+
+    public double calculateMarkup(){
+        return 100.1;
     }
 }
