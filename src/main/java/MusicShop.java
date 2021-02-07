@@ -1,4 +1,4 @@
-public abstract class MusicShop {
+public class MusicShop {
 
     private String name;
     private double till;
