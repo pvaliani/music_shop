@@ -1,4 +1,8 @@
-public class MusicalInstrument {
+
+// create the musical instrument as an abstract class as we want to be able to
+// test instruments which are the subclass of instrument and not just a musical instrument per se
+
+public abstract class MusicalInstrument {
 
     private String name;
     private String brand;
