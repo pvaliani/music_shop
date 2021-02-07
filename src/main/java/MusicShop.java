@@ -30,4 +30,37 @@ public class MusicShop {
     public void setTill(double till) {
         this.till = till;
     }
+
+//    retrieve the stock
+
+    public int getStockCount(){
+        return this.stock.size();
+    }
+
+//   add to stock
+
+    public void addToStock(ISell stockItem) {
+        this.stock.add(stockItem);
+    }
+
+//    remove from stock
+    public ISell removeFromStock(ISell stockItem) {
+        return this.stock.remove(this.stock.indexOf(stockItem));
+    }
+
+//    clear the stock list
+
+    public void removeAllStock() {
+        this.stock.clear();
+    }
+
+//    calculate the total shop profit
+
+    public double calculateTotalProfit() {
+        double totalProfit = 0;
+        for (ISell stockItem : stock) {
+            totalProfit += stockItem.calculateMarkup();
+        }
+        return totalProfit;
+    }
 }
