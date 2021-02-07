@@ -25,6 +25,8 @@ public class DrumKit extends MusicalInstrument implements IPlay {
         this.numberOfShells = numberOfShells;
     }
 
+    //    implements iplay to play the instrument sound
+
     public String playInstrument(){
         return "TSK TSK TSK TSK";
     }

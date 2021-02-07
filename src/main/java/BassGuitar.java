@@ -12,6 +12,8 @@ public class BassGuitar extends MusicalInstrument implements IPlay{
         return numberOfStrings;
     }
 
+//    implements iplay to play the instrument sound
+
     public String playInstrument(){
         return "SLAPPA DA BASS";
     }

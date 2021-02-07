@@ -25,6 +25,8 @@ public class ElectricGuitar extends MusicalInstrument implements IPlay {
         this.numberOfStrings = numberOfStrings;
     }
 
+    //    implements iplay to play the instrument sound
+
     public String playInstrument(){
         return "CHUN CHUN CHUN";
     }
