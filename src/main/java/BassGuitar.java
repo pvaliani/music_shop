@@ -18,7 +18,5 @@ public class BassGuitar extends MusicalInstrument{
         return "SLAPPA DA BASS";
     }
 
-    public double calculateMarkup(){
-        return 100.1;
-    }
+
 }

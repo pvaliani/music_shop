@@ -53,4 +53,8 @@ public abstract class MusicalInstrument implements IPlay, ISell {
     public void setBrand(String brand) {
         this.brand = brand;
     }
+
+    public double calculateMarkup(){
+        return this.salePrice - this.costPrice;
+    }
 }

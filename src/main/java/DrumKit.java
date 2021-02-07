@@ -1,4 +1,4 @@
-public class DrumKit extends MusicalInstrument implements ISell {
+public class DrumKit extends MusicalInstrument {
 
     private String numberOfCymbals;
     private String numberOfShells;
@@ -31,7 +31,5 @@ public class DrumKit extends MusicalInstrument implements ISell {
         return "TSK TSK TSK TSK";
     }
 
-    public double calculateMarkup(){
-        return 100.1;
-    }
+
 }

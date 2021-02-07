@@ -1,4 +1,4 @@
-public class ElectricGuitar extends MusicalInstrument implements ISell {
+public class ElectricGuitar extends MusicalInstrument {
 
     private boolean extendedRange = true;
     private int numberOfStrings;
@@ -31,7 +31,5 @@ public class ElectricGuitar extends MusicalInstrument implements ISell {
         return "CHUN CHUN CHUN";
     }
 
-    public double calculateMarkup(){
-        return 100.1;
-    }
+
 }
